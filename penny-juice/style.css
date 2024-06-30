@@ -1,0 +1,112 @@
+body{
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif;
+}
+ a {
+  color: #c2ae17;
+  text-decoration: none;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+nav a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #cfbe0c;
+  bottom: 0;
+  left: -100%;
+  transition: left 0.3s ease-in-out;
+}
+
+nav a:hover:before {
+  left: 0;
+}
+ .carousel-inner .item {
+  height: 100vh;
+}
+
+.carousel-inner .carousel-item img {
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+}
+.carousel-caption {
+  padding-bottom: 350px;
+}
+
+.carousel-caption h2 {
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.carousel-control.right {
+  background-image: none;
+}
+
+.carousel-control.left {
+  background-image: none;
+}
+
+.image-wrapper {
+  overflow: hidden;
+  cursor: zoom-in;
+}
+
+.img-zoom {
+  transition: transform 0.3s ease-in-out;
+}
+
+.img-zoom:hover,
+.img-zoom:focus {
+  transform: scale(1.2);
+}
+
+.yellow{
+  background-color: #fbf9e6;
+}
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-body {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(246, 244, 244);
+  padding: 30px;
+  max-height: 100%;
+  transform: translateY(100%);
+  transition: transform 0.5s ease-in;
+  gap: 20px;
+}
+
+.card:hover .card-body {
+  transform: translateY(0);
+}
+
+.footer{
+  background-color: rgb(230, 190, 87);
+}
+
+
+
+/* @keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.color {
+  animation: slide 8s linear infinite;
+  animation-iteration-count: infinite;
+} */
