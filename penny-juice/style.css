@@ -2,14 +2,17 @@ body{
   overflow-x: hidden;
   font-family: "Lato", sans-serif;
 }
- a {
+
+html {
+  scroll-behavior: smooth;
+}
+a {
   color: #c2ae17;
   text-decoration: none;
   padding: 20px;
   position: relative;
   overflow: hidden;
 }
-
 
 nav a:before {
   content: "";
@@ -25,9 +28,13 @@ nav a:before {
 nav a:hover:before {
   left: 0;
 }
- .carousel-inner .item {
-  height: 100vh;
+
+@media (max-width: 991.98px) {
+  nav a:before {
+    width: 40%; 
+  }
 }
+
 
 .carousel-inner .carousel-item img {
   width: 100%;
