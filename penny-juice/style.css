@@ -2,17 +2,14 @@ body{
   overflow-x: hidden;
   font-family: "Lato", sans-serif;
 }
-
-html {
-  scroll-behavior: smooth;
-}
-a {
+ a {
   color: #c2ae17;
   text-decoration: none;
   padding: 20px;
   position: relative;
   overflow: hidden;
 }
+
 
 nav a:before {
   content: "";
@@ -28,13 +25,9 @@ nav a:before {
 nav a:hover:before {
   left: 0;
 }
-
-@media (max-width: 991.98px) {
-  nav a:before {
-    width: 40%; 
-  }
+ .carousel-inner .item {
+  height: 100vh;
 }
-
 
 .carousel-inner .carousel-item img {
   width: 100%;
@@ -65,6 +58,7 @@ nav a:hover:before {
 
 .img-zoom {
   transition: transform 0.3s ease-in-out;
+  overflow: hidden;
 }
 
 .img-zoom:hover,
@@ -117,3 +111,38 @@ nav a:hover:before {
   animation: slide 8s linear infinite;
   animation-iteration-count: infinite;
 } */
+/* .color{
+  background-color: rgb(249, 245, 245); */
+  
+}
+.carousel-item img {
+  opacity: 0.8;
+}
+.custom-darker {
+  filter: brightness(0.7);
+}
+.contact:hover{
+  background-color: orange;
+}
+.penny{
+  color: orange;
+}
+.img-darker {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/j1.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+.img-darker2 {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/p6.png');
+  background-size: cover;
+  background-position: center;
+}
+.img-darker3 {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/l3.webp');
+  background-size: cover;
+  background-position: center;
+}
